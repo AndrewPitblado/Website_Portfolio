@@ -1,0 +1,131 @@
+.card-text {
+    color: ghostwhite;
+}
+
+.card-title {
+    color: #222222;
+    text-shadow: black;
+    background-color: whitesmoke;
+}
+
+.card{
+    background-color: black;
+}
+.card-header{
+    color: black;
+    background-color: lightgray;
+    font-size: large;
+}
+
+.container h1{
+    padding-bottom: 5px;
+}
+
+.row{
+    padding-bottom: 25px;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+
+
+}
+.skills h1.title{
+    text-shadow: black 3px 3px;
+}
+
+.skills{
+    background-color: rgba(50, 100, 200, 0.8);
+    background-blend-mode: color-burn;
+    backdrop-filter: blur(40px);
+}
+.projects {
+    background-color: rgba(30, 40, 50, 0.8);
+}
+.projects h1.section-title{
+    color: ghostwhite;
+    text-shadow: black 3px 3px 3px;
+}
+.projects span{
+    color: dodgerblue;
+    text-shadow:black 1px 1px 5px;
+
+}
+.projects div.title{
+    background-color: rgba(20,20,20, 0.9);
+    border-style: wave;
+    border-radius: 10px;
+}
+.projects p{
+    color: lightgray;
+    text-shadow: black 4px 4px 4px;
+}
+.education{
+    background-color: rgba(150,100,200, 0.8);
+
+}
+
+.education span{
+    color: floralwhite;
+    text-shadow:black 1px 1px 5px;
+}
+
+.education div.title{
+    background-color: rgba(0,0,0, 0.5);
+    border-style: wave;
+    border-radius: 10px;
+}
+.education div.title-major{
+
+    background-color: rgba(0,0,0, 0.3);
+    border-style: wave;
+    border-radius: 10px;
+}
+.education img{
+
+    border: 7px solid darkslategray;
+    border-radius: 10px;
+
+}
+.education figure{
+    float: right;
+    padding-left: 30px;
+
+}
+.education img.circle{
+    width:120px;
+    margin: 10px;
+
+    border:7px solid darkslategrey;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+.education  h1.section-title, h1.courses{
+    color: ghostwhite;
+    text-shadow: black 3px 3px 3px;
+
+}
+.education h2{
+    color: #FFF;
+    text-shadow: black 3px 3px 3px;
+
+}
+
+
+
+.education p{
+    background-color: rgba(10,10,10, 0.8);
+    background-size: inherit;
+    border-radius: 20px;
+    color: ghostwhite;
+    text-shadow: black 2px 2px 3px;
+    padding: 15px;
+    font-style: oblique;
+    font-size: 22px;
+
+
+}
