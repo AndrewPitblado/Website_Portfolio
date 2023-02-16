@@ -1,21 +1,240 @@
-.card-text {
-    color: ghostwhite;
+
+
+#lightSwitch{
+    transform: scale(1.2);
 }
 
-.card-title {
-    color: #222222;
-    text-shadow: black;
-    background-color: whitesmoke;
+.custom-theme.bg-light{
+    background-color: rgb(127, 145, 168) !important;
+    border-radius: 3px;
+    color: white;
+
 }
+
+.custom-theme.bg-dark {
+    background-color: rgb(40,40,40) !important;
+    box-shadow: 2px 2px 2px rgba(200, 200, 200, 0.8);
+    color: ghostwhite;
+
+}
+
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoGithub:hover {
+    background-color: #7fc77d;
+}
+.social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+    background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+    color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+}
+
+.social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+}
+.social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.navbar a {
+    background-color: #95a4b7;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+
+.navbar a:hover{
+    background-color: #3195e0;
+}
+.navbar li{
+    /*padding-left: 30px;*/
+    /*padding-right: 30px;*/
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.social-network a{
+    background-color: #9f9494;
+}
+
+
+
+
+
+
+
+
+
+.opening p{
+    color: #98b6cc;
+    font-weight: bold;
+
+}
+
+
+.about{
+    background-color: rgba(113, 128, 176, 0.7);
+}
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 1.2s;
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+
+}
+
+
+
+.card.hidden:nth-child(1){
+    transition-delay: 100ms;
+}
+
+.card.hidden:nth-child(2){
+    transition-delay: 300ms;
+}
+
+.card.hidden:nth-child(3){
+    transition-delay: 500ms;
+}
+.card.hidden:nth-child(4){
+    transition-delay: 500ms;
+}
+.card.hidden:nth-child(5){
+    transition-delay: 600ms;
+}
+
+.hidden.about-me{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+
+}
+
+.show.about-me{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+
+}
+
+
+
+
 
 .card{
-    background-color: black;
+    background-color: rgba(50, 150, 200, 0.8);
 }
-.card-header{
+
+.card-text.bg-light{
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.card-text.bg-dark{
+    color: ghostwhite;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.about h5{
+    color: #000;
+}
+
+
+.card-header .bg-light{
     color: black;
     background-color: lightgray;
     font-size: large;
 }
+.card-header .bg-dark{
+    color: white;
+    background-color: dimgray;
+    font-size: large;
+}
+
 
 .container h1{
     padding-bottom: 5px;
@@ -32,15 +251,17 @@
 
 
 }
-.skills h1.title{
+.skills h1{
     text-shadow: black 3px 3px;
 }
 
 .skills{
-    background-color: rgba(50, 100, 200, 0.8);
+    background-color: rgba(10, 100, 200, 0.8);
     background-blend-mode: color-burn;
     backdrop-filter: blur(40px);
 }
+
+
 .projects {
     background-color: rgba(30, 40, 50, 0.8);
 }
@@ -117,6 +338,7 @@
 
 
 
+
 .education p{
     background-color: rgba(10,10,10, 0.8);
     background-size: inherit;
@@ -129,3 +351,17 @@
 
 
 }
+.accordion-button.collapsed {
+    background-color: #575c6c;
+    color: #e1e7ea;
+
+}
+.accordion-body{
+    background-color: lightgray;
+}
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+
