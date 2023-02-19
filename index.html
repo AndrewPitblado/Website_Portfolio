@@ -39,20 +39,15 @@
 
 <body>
         <!---------- Navbar -------------->
-  <nav class="navbar navbar-expand-lg custom-theme bg-dark navbar-dark py-2 sticky-top">
+  <nav class="navbar navbar-expand-md custom-theme bg-dark navbar-dark py-2 sticky-top">
     <div class="container">
       <a href="#" class="navbar-brand">This is my Portfolio</a>
-      <button class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navmenu"
+<!--      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--      </button>-->
 
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav ms-auto">
+<!--      <div class="collapse  navbar-collapse" id="navmenu">-->
+        <ul class="navbar-nav nav-menu ms-auto">
           <li class="nav-item">
             <a href="#about" class="nav-link ">About Me</a>
           </li>
@@ -66,7 +61,13 @@
             <a href="#education" class="nav-link">Education</a>
           </li>
         </ul>
-      </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+
+        </div>
+<!--      </div>-->
     </div>
   </nav>
 
@@ -252,7 +253,7 @@
 
               <div class="row align-center">
                 <div class="col">
-                  <div class="card hidden border-dark border-5" style="width: auto">
+                  <div class="card hidden about-me border-dark border-5" style="width: auto">
                     <img src="img/undraw_static_assets_rpm6.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h1 class="card-title custom-theme bg-light">
@@ -265,7 +266,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card hidden border-dark border-5" style="width: auto">
+                  <div class="card hidden about-me border-dark border-5" style="width: auto">
                     <img src="img/linux-ar21.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h1 class="card-title custom-theme bg-light">
@@ -292,7 +293,7 @@
             </div>
 
             <div class=" pb-5 pt-3 d-sm-flex align-items-center justify-content-between ">
-              <div>
+              <div class="hidden project">
                 <div class="title w-50 text-center">
                 <h1><span>Portfolio Website</span>
                 </h1>
@@ -303,7 +304,7 @@
                   HTML, CSS, JavaScript along with the Bootstrap framework
                 </p>
               </div>
-                <img class="img-fluid w-50 d-none d-sm-block"
+                <img class="hidden img-fluid w-50 d-none d-sm-block"
                   src="img/Screenshot 2023-02-01 at 11.23.16 PM.png" alt="">
            </div>
          </div>
@@ -311,8 +312,8 @@
           <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
 
-              <img class="img-fluid w-50 d-none d-sm-block" src="img/undraw_destination_re_sr74.svg" alt="">
-             <div>
+              <img class=" hidden img-fluid w-50 d-none d-sm-block" src="img/undraw_destination_re_sr74.svg" alt="">
+             <div class="hidden project">
                <div class="title w-auto text-center">
                  <h1><span>
                    Campus Navigation Application
@@ -340,7 +341,7 @@
             </div>
 
             <div class=" pb-5 pt-3 d-sm-flex align-items-center justify-content-between">
-              <div>
+              <div class="hidden">
                 <div class="row">
                 <div class="title col-6  text-center w-auto">
                   <h1><span>Western University 2021-2024</span>
@@ -360,7 +361,7 @@
                 </div>
               </div>
               <figure>
-                <img class="circle  img-fluid w-100 float-end d-none d-sm-block "
+                <img class="circle  hidden project img-fluid w-100 float-end d-none d-sm-block "
                      src="img/undraw_programmer_re_owql.svg" alt="">
               </figure>
 
@@ -370,12 +371,11 @@
 <!--              Courses -------------->
 
             <h1 class="courses">Courses</h1>
-            <div>
+            <div class="hidden">
               <h2>Here are some notable courses I have taken during my degree</h2>
             </div>
             <div class=" pb-5 pt-3 d-sm-flex align-items-center justify-content-between">
-              <div
-                      class="accordion accordion-flush  pt-3 w-75"  id="accordionExample">
+              <div class=" hidden accordion accordion-flush  pt-3 w-75"  id="accordionExample">
                 <div class="accordion-item ">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -385,7 +385,11 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <strong>Language: Java.</strong> It is shown by default, until the
+                      collapse
+                      plugin
+                      adds the
+                      appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
                   </div>
                 </div>
@@ -417,7 +421,7 @@
                   </div>
                 </div>
               </div>
-                <img src="img/Stacked.gif" alt="">
+                <img class="hidden project" src="img/Stacked.gif" alt="">
               </div>
           </div>
         </section>
